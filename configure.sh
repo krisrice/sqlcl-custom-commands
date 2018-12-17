@@ -18,7 +18,7 @@ echo Using SQLCL_VERSION  as ${SQLCL_VERSION}
 ## Install sqlcl jars into the local maven
 #
 mvn install:install-file -Dfile=${SQLCL_BIN}/../lib/dbtools-common.jar	-DgroupId=oracle.dbtools -DartifactId=dbtools-common -Dversion=${SQLCL_VERSION} -Dpackaging=jar
-mvn install:install-file -Dfile=${SQLCL_BIN}/../lib/sqlcl.jar	-DgroupId=oracle.dbtools -DartifactId=dbtools-sqlcl -Dversion=${SQLCL_VERSION} -Dpackaging=jar
+mvn install:install-file -Dfile=${SQLCL_BIN}/../lib/dbtools-sqlcl.jar	-DgroupId=oracle.dbtools -DartifactId=dbtools-sqlcl -Dversion=${SQLCL_VERSION} -Dpackaging=jar
 
 #
 # Create property file for maven to read
